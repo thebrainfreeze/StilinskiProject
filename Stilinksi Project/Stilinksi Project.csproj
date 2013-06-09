@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F6D421D-D786-48F8-B7B8-44E773F035B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Stilinksi_Project</RootNamespace>
+    <AssemblyName>Stilinksi Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_diagnostics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_diagnostics.Designer.cs">
+      <DependentUpon>form_diagnostics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_enroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_enroll.Designer.cs">
+      <DependentUpon>form_enroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Pyramid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Pyramid.Designer.cs">
+      <DependentUpon>form_Pyramid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Dashboard.Designer.cs">
+      <DependentUpon>frm_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_enroll.resx">
+      <DependentUpon>form_enroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Pyramid.resx">
+      <DependentUpon>form_Pyramid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Dashboard.resx">
+      <DependentUpon>frm_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenv2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenv2_newuser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenv2_newuser_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenv2_newuser_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenv2_newuser_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upperbar_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upperbar_01_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\achievements-hover_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttons_hover_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttons_hover_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_green.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenv2_login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubar3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportcard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tutorials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_green.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\achievement_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttons_hover_09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttons_hover_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_diagnostic_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_knowyournumber_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gamescreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\achievements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttons-hover_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttons-hover_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttons-hover_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttons-hover_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttons-hover_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttons-hover_09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Change.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pa3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pa4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pa5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pa6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pa7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pa8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pa9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pa10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenv2_login_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenv2_login_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenv2_login_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenv2_login_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenv2_login_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenv2_login_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenv2_login_17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenv2_login_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upperbar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar-boy6-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALENDAR_01_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALENDAR_01_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALENDAR_01_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALENDAR_01_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALENDAR_01_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALENDAR_01_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALENDAR_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALENDAR_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALENDAR_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALENDAR_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALENDAR_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALENDAR_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flashcard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tutorial-add01.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

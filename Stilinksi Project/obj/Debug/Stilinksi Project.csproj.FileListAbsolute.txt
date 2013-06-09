@@ -1,0 +1,12 @@
+C:\Users\Abby\Documents\Visual Studio 2012\Projects\Stilinksi Project\Stilinksi Project\obj\Debug\Stilinksi_Project.Frm_Login.resources
+C:\Users\Abby\Documents\Visual Studio 2012\Projects\Stilinksi Project\Stilinksi Project\obj\Debug\Stilinksi_Project.Form2.resources
+C:\Users\Abby\Documents\Visual Studio 2012\Projects\Stilinksi Project\Stilinksi Project\obj\Debug\Stilinksi_Project.form_Pyramid.resources
+C:\Users\Abby\Documents\Visual Studio 2012\Projects\Stilinksi Project\Stilinksi Project\obj\Debug\Stilinksi_Project.frm_Dashboard.resources
+C:\Users\Abby\Documents\Visual Studio 2012\Projects\Stilinksi Project\Stilinksi Project\obj\Debug\Stilinksi_Project.Properties.Resources.resources
+C:\Users\Abby\Documents\Visual Studio 2012\Projects\Stilinksi Project\Stilinksi Project\obj\Debug\Stilinksi Project.csproj.GenerateResource.Cache
+C:\Users\Abby\Documents\Visual Studio 2012\Projects\Stilinksi Project\Stilinksi Project\bin\Debug\Stilinksi Project.exe.config
+C:\Users\Abby\Documents\Visual Studio 2012\Projects\Stilinksi Project\Stilinksi Project\bin\Debug\Stilinksi Project.exe
+C:\Users\Abby\Documents\Visual Studio 2012\Projects\Stilinksi Project\Stilinksi Project\bin\Debug\Stilinksi Project.pdb
+C:\Users\Abby\Documents\Visual Studio 2012\Projects\Stilinksi Project\Stilinksi Project\obj\Debug\Stilinksi Project.exe
+C:\Users\Abby\Documents\Visual Studio 2012\Projects\Stilinksi Project\Stilinksi Project\obj\Debug\Stilinksi Project.pdb
+C:\Users\Abby\Documents\Visual Studio 2012\Projects\Stilinksi Project\Stilinksi Project\obj\Debug\Stilinksi_Project.form_enroll.resources
